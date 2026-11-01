@@ -1,0 +1,314 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 430" width="100%" height="100%">
+  <defs>
+    <!-- Deep Space & Orbital Gradients -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#030712"/>
+      <stop offset="45%" stop-color="#071126"/>
+      <stop offset="100%" stop-color="#02171e"/>
+    </linearGradient>
+
+    <radialGradient id="globeGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.32"/>
+      <stop offset="55%" stop-color="#10b981" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#030712" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="earthCore" cx="38%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#0e7490" stop-opacity="0.45"/>
+      <stop offset="55%" stop-color="#0f172a" stop-opacity="0.88"/>
+      <stop offset="100%" stop-color="#020617" stop-opacity="0.98"/>
+    </radialGradient>
+
+    <linearGradient id="radarSweepGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#22d3ee" stop-opacity="0.55"/>
+      <stop offset="40%" stop-color="#10b981" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#10b981" stop-opacity="0"/>
+    </linearGradient>
+
+    <linearGradient id="cyanEmerald" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="50%" stop-color="#22d3ee"/>
+      <stop offset="100%" stop-color="#10b981"/>
+    </linearGradient>
+
+    <linearGradient id="goldAmber" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#fbbf24"/>
+      <stop offset="100%" stop-color="#f59e0b"/>
+    </linearGradient>
+
+    <linearGradient id="scanlineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#22d3ee" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#22d3ee" stop-opacity="0.75"/>
+      <stop offset="100%" stop-color="#10b981" stop-opacity="0"/>
+    </linearGradient>
+
+    <filter id="neonGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3.5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <pattern id="hudGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#0e7490" stroke-width="0.6" stroke-opacity="0.22"/>
+      <circle cx="40" cy="40" r="0.9" fill="#22d3ee" fill-opacity="0.3"/>
+    </pattern>
+
+    <!-- Orbital Paths for Satellites -->
+    <path id="orbitPath1" d="M 790,215 m -175,-55 a 185,78 0 1,0 350,110 a 185,78 0 1,0 -350,-110" />
+    <path id="orbitPath2" d="M 965,215 m -75,-158 a 82,175 0 1,0 150,316 a 82,175 0 1,0 -150,-316" />
+  </defs>
+
+  <style>
+    .font-mono { font-family: 'JetBrains Mono', 'Fira Code', 'Consolas', monospace; }
+    .font-sans { font-family: 'Inter', 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif; }
+    .pulse-fast { animation: pulseOp 2.2s infinite ease-in-out; }
+    .pulse-slow { animation: pulseOp 4s infinite ease-in-out; }
+    .dash-flow { stroke-dasharray: 6 6; animation: dashMove 18s linear infinite; }
+    .radar-spin { transform-origin: 965px 215px; animation: spin360 9s linear infinite; }
+    .ring-spin-cw { transform-origin: 965px 215px; animation: spin360 32s linear infinite; }
+    .ring-spin-ccw { transform-origin: 965px 215px; animation: spinCCW 24s linear infinite; }
+    .scan-vertical { animation: scanY 7s ease-in-out infinite; }
+    .wave-anim { stroke-dasharray: 280; stroke-dashoffset: 280; animation: drawWave 4.5s ease-in-out infinite alternate; }
+
+    @keyframes pulseOp {
+      0%, 100% { opacity: 0.35; }
+      50% { opacity: 1; }
+    }
+    @keyframes dashMove {
+      to { stroke-dashoffset: -240; }
+    }
+    @keyframes spin360 {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+    @keyframes spinCCW {
+      from { transform: rotate(360deg); }
+      to { transform: rotate(0deg); }
+    }
+    @keyframes scanY {
+      0%, 100% { transform: translateY(0px); opacity: 0.25; }
+      50% { transform: translateY(390px); opacity: 0.75; }
+    }
+    @keyframes drawWave {
+      0% { stroke-dashoffset: 240; }
+      100% { stroke-dashoffset: 0; }
+    }
+  </style>
+
+  <!-- Background Canvas -->
+  <rect width="1200" height="430" rx="18" fill="url(#bgGrad)" stroke="#164e63" stroke-width="1.5"/>
+  <rect width="1200" height="430" rx="18" fill="url(#hudGrid)"/>
+
+  <!-- Animated Horizontal Laser Scanline -->
+  <g class="scan-vertical">
+    <rect x="10" y="18" width="1180" height="1.5" fill="url(#scanlineGrad)"/>
+  </g>
+
+  <!-- Ambient Starfield -->
+  <g fill="#e0f2fe">
+    <circle cx="85" cy="52" r="1.1" class="pulse-slow"/>
+    <circle cx="340" cy="36" r="1.4" class="pulse-fast"/>
+    <circle cx="620" cy="68" r="1.0" class="pulse-slow"/>
+    <circle cx="745" cy="42" r="1.6" class="pulse-fast"/>
+    <circle cx="1140" cy="58" r="1.2" class="pulse-slow"/>
+    <circle cx="695" cy="375" r="1.3" class="pulse-fast"/>
+    <circle cx="1160" cy="380" r="1.5" class="pulse-slow"/>
+  </g>
+
+  <!-- Top HUD Telemetry Bar -->
+  <rect x="24" y="18" width="1152" height="32" rx="6" fill="#040d1a" fill-opacity="0.85" stroke="#0e7490" stroke-width="0.9"/>
+  <circle cx="42" cy="34" r="4.5" fill="#10b981" filter="url(#neonGlow)">
+    <animate attributeName="opacity" values="1;0.25;1" dur="1.6s" repeatCount="indefinite"/>
+  </circle>
+  <text x="56" y="38" fill="#22d3ee" font-size="11" font-weight="700" class="font-mono" letter-spacing="1.2">
+    ORBITAL GEOAI COMMAND CENTER // SYS.ONLINE
+  </text>
+  <text x="415" y="38" fill="#94a3b8" font-size="11" class="font-mono">
+    TARGET: WESTERN HIMALAYAS [32.2432° N, 77.1892° E]
+  </text>
+  <text x="805" y="38" fill="#10b981" font-size="11" font-weight="600" class="font-mono">
+    SENSORS: S1-SAR VV/VH • S2-MSI • GLO-30 • MCP:8765
+  </text>
+
+  <!-- ==================== RIGHT SIDE: 3D ORBITAL EARTH OBSERVATION GLOBE ==================== -->
+  <circle cx="965" cy="215" r="195" fill="url(#globeGlow)"/>
+
+  <!-- Outer Azimuth Telemetry Ring (Rotating CW) -->
+  <g class="ring-spin-cw">
+    <circle cx="965" cy="215" r="162" fill="none" stroke="#0891b2" stroke-width="1" stroke-dasharray="4 8 18 8" stroke-opacity="0.65"/>
+    <circle cx="965" cy="53" r="3" fill="#22d3ee"/>
+    <circle cx="965" cy="377" r="3" fill="#10b981"/>
+    <circle cx="803" cy="215" r="3" fill="#22d3ee"/>
+    <circle cx="1127" cy="215" r="3" fill="#10b981"/>
+  </g>
+
+  <!-- Second Tactical Ring (Rotating CCW) -->
+  <g class="ring-spin-ccw">
+    <circle cx="965" cy="215" r="142" fill="none" stroke="#10b981" stroke-width="1.1" stroke-dasharray="28 14 6 14" stroke-opacity="0.5"/>
+  </g>
+
+  <!-- Core Planet Sphere -->
+  <circle cx="965" cy="215" r="122" fill="url(#earthCore)" stroke="#22d3ee" stroke-width="1.6" stroke-opacity="0.8"/>
+
+  <!-- Globe Latitude / Longitude Wireframe Mesh -->
+  <g fill="none" stroke="#06b6d4" stroke-width="0.8" stroke-opacity="0.35">
+    <ellipse cx="965" cy="215" rx="122" ry="42"/>
+    <ellipse cx="965" cy="215" rx="122" ry="85"/>
+    <ellipse cx="965" cy="215" rx="42" ry="122"/>
+    <ellipse cx="965" cy="215" rx="85" ry="122"/>
+    <line x1="843" y1="215" x2="1087" y2="215" stroke-opacity="0.55"/>
+    <line x1="965" y1="93" x2="965" y2="337" stroke-opacity="0.55"/>
+  </g>
+
+  <!-- Stylized India & Himalayan High-Altitude Vector Contour on Globe -->
+  <path d="M 942,155 L 962,148 L 986,158 L 1005,172 L 998,195 L 982,228 L 968,262 L 955,232 L 940,205 L 932,182 Z"
+        fill="#10b981" fill-opacity="0.22" stroke="#34d399" stroke-width="1.4" class="dash-flow"/>
+
+  <!-- Sweeping SAR Radar Beam -->
+  <g class="radar-spin">
+    <path d="M 965,215 L 965,93 A 122,122 0 0,1 1072,156 Z" fill="url(#radarSweepGrad)"/>
+    <line x1="965" y1="215" x2="965" y2="93" stroke="#22d3ee" stroke-width="1.8" filter="url(#neonGlow)"/>
+  </g>
+
+  <!-- Target Lock Hotspot: Himachal & Uttarakhand Glacial Belt -->
+  <g transform="translate(972, 166)">
+    <circle cx="0" cy="0" r="4" fill="#f43f5e" filter="url(#neonGlow)"/>
+    <circle cx="0" cy="0" r="6" fill="none" stroke="#fb7185" stroke-width="1.4">
+      <animate attributeName="r" values="4;22" dur="2.1s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="1;0" dur="2.1s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="0" cy="0" r="6" fill="none" stroke="#38bdf8" stroke-width="1.1">
+      <animate attributeName="r" values="4;34" dur="2.1s" begin="0.7s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.9;0" dur="2.1s" begin="0.7s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!--Target Callout Tag -->
+  <polyline points="972,166 1015,122 1148,122" fill="none" stroke="#fb7185" stroke-width="1.2"/>
+  <rect x="1015" y="96" width="148" height="22" rx="4" fill="#0f172a" stroke="#f43f5e" stroke-width="1"/>
+  <text x="1023" y="111" fill="#fda4af" font-size="9.5" font-weight="700" class="font-mono">
+    GLOF SAR TARGET LOCK
+  </text>
+
+  <!-- Inclined Satellite Orbit Tracks -->
+  <use href="#orbitPath1" fill="none" stroke="#38bdf8" stroke-width="1.1" stroke-dasharray="5 5" stroke-opacity="0.55"/>
+  <use href="#orbitPath2" fill="none" stroke="#10b981" stroke-width="1.1" stroke-dasharray="4 6" stroke-opacity="0.45"/>
+
+  <!-- Orbiting Satellite 1: Sentinel-1 SAR -->
+  <g>
+    <animateMotion dur="11s" repeatCount="indefinite" rotate="auto">
+      <mpath href="#orbitPath1"/>
+    </animateMotion>
+    <rect x="-12" y="-3" width="8" height="6" fill="#0284c7" stroke="#bae6fd" stroke-width="0.8"/>
+    <rect x="4" y="-3" width="8" height="6" fill="#0284c7" stroke="#bae6fd" stroke-width="0.8"/>
+    <rect x="-4" y="-4" width="8" height="8" rx="1.5" fill="#f8fafc" stroke="#22d3ee" stroke-width="1.2" filter="url(#neonGlow)"/>
+    <circle cx="0" cy="0" r="2" fill="#22d3ee"/>
+  </g>
+
+  <!-- Orbiting Satellite 2: Sentinel-2 MSI -->
+  <g>
+    <animateMotion dur="14s" repeatCount="indefinite" rotate="auto">
+      <mpath href="#orbitPath2"/>
+    </animateMotion>
+    <rect x="-11" y="-2.5" width="7" height="5" fill="#059669" stroke="#a7f3d0" stroke-width="0.8"/>
+    <rect x="4" y="-2.5" width="7" height="5" fill="#059669" stroke="#a7f3d0" stroke-width="0.8"/>
+    <circle cx="0" cy="0" r="4" fill="#ecfdf5" stroke="#10b981" stroke-width="1.2" filter="url(#neonGlow)"/>
+  </g>
+
+  <!-- Bottom Right Live Spectral Waveform HUD -->
+  <rect x="785" y="362" width="385" height="48" rx="8" fill="#040d1a" fill-opacity="0.9" stroke="#0e7490" stroke-width="1"/>
+  <text x="800" y="379" fill="#67e8f9" font-size="9.5" font-weight="700" class="font-mono">
+    LIVE BACKSCATTER (σ° VV/VH) &amp; NDWI SPECTRAL STREAM
+  </text>
+  <path d="M 800,398 Q 820,378 840,396 T 880,390 T 920,399 T 960,382 T 1000,396 T 1040,384 T 1080,397 T 1120,383 T 1155,394"
+        fill="none" stroke="#22d3ee" stroke-width="1.8" class="wave-anim"/>
+  <path d="M 800,402 Q 825,392 850,400 T 900,386 T 950,401 T 1000,388 T 1050,400 T 1100,389 T 1155,399"
+        fill="none" stroke="#10b981" stroke-width="1.3" stroke-opacity="0.8"/>
+
+  <!-- ==================== LEFT SIDE: IDENTITY, ARCHITECTURE & CREDENTIALS ==================== -->
+
+  <!-- Top Classification Pill -->
+  <rect x="36" y="68" width="490" height="28" rx="14" fill="#082f49" fill-opacity="0.7" stroke="#38bdf8" stroke-width="1.2"/>
+  <circle cx="54" cy="82" r="4" fill="#38bdf8" class="pulse-fast"/>
+  <text x="68" y="86" fill="#bae6fd" font-size="11.5" font-weight="700" class="font-mono" letter-spacing="0.8">
+    SPATIAL DATA SCIENTIST • GEOAI ARCHITECT • EO RESEARCHER
+  </text>
+
+  <!-- Hero Name & Handle -->
+  <text x="36" y="146" fill="#f8fafc" font-size="52" font-weight="900" class="font-sans" letter-spacing="-0.5">
+    PRINCE
+  </text>
+  <text x="242" y="146" fill="url(#cyanEmerald)" font-size="24" font-weight="700" class="font-mono">
+    @sutharprin098
+  </text>
+
+  <!-- Animated Subtitle / Mission Statement -->
+  <text x="36" y="178" fill="#cbd5e1" font-size="15.5" font-weight="500" class="font-sans">
+    Building <tspan fill="#38bdf8" font-weight="700">Autonomous Desktop &amp; Cloud GIS Agents</tspan>, <tspan fill="#34d399" font-weight="700">SAR/Optical Hazard Pipelines</tspan>
+  </text>
+  <text x="36" y="201" fill="#94a3b8" font-size="14" class="font-sans">
+    Department of Geography, University of Delhi (BA Hons. with Research) • ORCID: <tspan fill="#a3e635" class="font-mono">0009-0008-5483-2837</tspan>
+  </text>
+
+  <!-- 4 Live Telemetry KPI Cards -->
+  <!-- Card 1: Official QGIS Plugin -->
+  <g transform="translate(36, 222)">
+    <rect width="172" height="74" rx="10" fill="#061326" stroke="#10b981" stroke-width="1.3"/>
+    <rect x="0" y="0" width="5" height="74" rx="2.5" fill="#10b981"/>
+    <text x="16" y="23" fill="#6ee7b7" font-size="10" font-weight="700" class="font-mono">OFFICIAL QGIS REPO</text>
+    <text x="16" y="48" fill="#ffffff" font-size="20" font-weight="800" class="font-sans">AutoGIS #6782</text>
+    <text x="16" y="64" fill="#94a3b8" font-size="10.5" class="font-mono">39 GeoAI Tools • MCP</text>
+  </g>
+
+  <!-- Card 2: opengeos/GeoLibre Core -->
+  <g transform="translate(220, 222)">
+    <rect width="172" height="74" rx="10" fill="#061326" stroke="#38bdf8" stroke-width="1.3"/>
+    <rect x="0" y="0" width="5" height="74" rx="2.5" fill="#38bdf8"/>
+    <text x="16" y="23" fill="#7dd3fc" font-size="10" font-weight="700" class="font-mono">OPENGEOS / GEOLIBRE</text>
+    <text x="16" y="48" fill="#ffffff" font-size="20" font-weight="800" class="font-sans">Core + PR #3300</text>
+    <text x="16" y="64" fill="#94a3b8" font-size="10.5" class="font-mono">17 Live MCP Bridge Tools</text>
+  </g>
+
+  <!-- Card 3: Scientific Publications -->
+  <g transform="translate(404, 222)">
+    <rect width="172" height="74" rx="10" fill="#061326" stroke="#f59e0b" stroke-width="1.3"/>
+    <rect x="0" y="0" width="5" height="74" rx="2.5" fill="#f59e0b"/>
+    <text x="16" y="23" fill="#fcd34d" font-size="10" font-weight="700" class="font-mono">ESRI INDIA UC 2026</text>
+    <text x="16" y="48" fill="#ffffff" font-size="20" font-weight="800" class="font-sans">Zenodo &amp; XERJ</text>
+    <text x="16" y="64" fill="#94a3b8" font-size="10.5" class="font-mono">DOI: 10.5281/zenodo</text>
+  </g>
+
+  <!-- Card 4: CamAI Edge Vision -->
+  <g transform="translate(588, 222)">
+    <rect width="172" height="74" rx="10" fill="#061326" stroke="#a855f7" stroke-width="1.3"/>
+    <rect x="0" y="0" width="5" height="74" rx="2.5" fill="#a855f7"/>
+    <text x="16" y="23" fill="#d8b4fe" font-size="10" font-weight="700" class="font-mono">FOUNDER &amp; ARCHITECT</text>
+    <text x="16" y="48" fill="#ffffff" font-size="20" font-weight="800" class="font-sans">CamAI Vision</text>
+    <text x="16" y="64" fill="#94a3b8" font-size="10.5" class="font-mono">TensorRT FP16 • Re-ID</text>
+  </g>
+
+  <!-- Live Terminal Command Execution Strip -->
+  <rect x="36" y="314" width="724" height="96" rx="10" fill="#020617" stroke="#1e293b" stroke-width="1.4"/>
+  <circle cx="54" cy="330" r="4.5" fill="#ef4444"/>
+  <circle cx="69" cy="330" r="4.5" fill="#f59e0b"/>
+  <circle cx="84" cy="330" r="4.5" fill="#10b981"/>
+  <text x="102" y="334" fill="#64748b" font-size="10.5" font-weight="600" class="font-mono">
+    prince@autogis-mcp-server:~/himalayan-glof-lab$
+  </text>
+
+  <text x="52" y="358" fill="#38bdf8" font-size="12" font-weight="600" class="font-mono">
+    &gt; autogis.dispatch("Sentinel-1 SAR + Sentinel-2 NDWI GLOF Hazard &amp; 300 DPI Dual-Panel Map")
+  </text>
+  <text x="52" y="378" fill="#10b981" font-size="11.5" class="font-mono">
+    [OK] GEE Project: ee-sutharprince098 | Polygon Clip: Float32 (-9999 NoData) | MCP Loopback: 127.0.0.1:8765
+  </text>
+  <text x="52" y="397" fill="#e2e8f0" font-size="11.5" class="font-mono">
+    [READY] Exporting 300 DPI Publication Cartography + 3D MapLibre Digital Twin...
+  </text>
+  <!-- Blinking Terminal Cursor -->
+  <rect x="598" y="386" width="8" height="14" fill="#22d3ee">
+    <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
+  </rect>
+</svg>

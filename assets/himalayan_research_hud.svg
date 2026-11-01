@@ -1,0 +1,143 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 310" width="100%" height="100%">
+  <defs>
+    <linearGradient id="resBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#030712"/>
+      <stop offset="50%" stop-color="#081326"/>
+      <stop offset="100%" stop-color="#03161e"/>
+    </linearGradient>
+
+    <linearGradient id="lakeExpand" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#0284c7" stop-opacity="0.35"/>
+    </linearGradient>
+
+    <linearGradient id="barCyan" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#06b6d4"/>
+      <stop offset="100%" stop-color="#38bdf8"/>
+    </linearGradient>
+
+    <linearGradient id="barAmber" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#ef4444"/>
+    </linearGradient>
+  </defs>
+
+  <style>
+    .mono { font-family: 'JetBrains Mono', 'Fira Code', 'Consolas', monospace; }
+    .sans { font-family: 'Inter', 'Segoe UI', -apple-system, sans-serif; }
+    .lake-pulse { animation: lakeGrow 4s ease-in-out infinite; transform-origin: 480px 185px; }
+    .iso-pulse { animation: blinkAlert 2s infinite ease-in-out; }
+    @keyframes lakeGrow {
+      0%, 100% { transform: scale(0.92); opacity: 0.75; }
+      50% { transform: scale(1.08); opacity: 1; }
+    }
+    @keyframes blinkAlert {
+      0%, 100% { opacity: 0.35; }
+      50% { opacity: 1; }
+    }
+  </style>
+
+  <!-- Main Frame -->
+  <rect width="1200" height="310" rx="16" fill="url(#resBg)" stroke="#1e293b" stroke-width="1.5"/>
+
+  <!-- Top Section Bar -->
+  <rect x="24" y="16" width="1152" height="30" rx="6" fill="#050e1d" stroke="#0e7490" stroke-width="0.9"/>
+  <text x="40" y="35" fill="#38bdf8" font-size="11" font-weight="700" class="mono" letter-spacing="1">
+    HIMALAYAN EARTH OBSERVATION &amp; HAZARD MODELING TELEMETRY // UNIVERSITY OF DELHI RESEARCH
+  </text>
+  <text x="865" y="35" fill="#fbbf24" font-size="11" font-weight="700" class="mono">
+    ZENODO DOI: 10.5281/zenodo.23670659
+  </text>
+
+  <!-- ==================== LEFT PANEL: HIMACHAL GLOF SAR-OPTICAL DEEP LEARNING ==================== -->
+  <g transform="translate(24, 58)">
+    <rect width="564" height="232" rx="12" fill="#061121" stroke="#0284c7" stroke-width="1.3"/>
+    <rect x="16" y="14" width="215" height="22" rx="4" fill="#082f49"/>
+    <text x="26" y="29" fill="#38bdf8" font-size="10" font-weight="700" class="mono">HONOURS THESIS // HIMACHAL PRADESH</text>
+
+    <text x="16" y="58" fill="#ffffff" font-size="17" font-weight="800" class="sans">
+      AI-Based Glacial Lake &amp; GLOF Risk Forecasting
+    </text>
+    <text x="16" y="78" fill="#94a3b8" font-size="11.5" class="sans">
+      Multi-sensor fusion of <tspan fill="#38bdf8" font-weight="600">Sentinel-1 C-Band SAR (VV/VH)</tspan> &amp; <tspan fill="#34d399" font-weight="600">Sentinel-2 NDWI/MNDWI</tspan>
+    </text>
+
+    <!-- Quantitative Pipeline Specs -->
+    <g transform="translate(16, 96)">
+      <rect width="340" height="28" rx="5" fill="#0a192f" stroke="#1e293b"/>
+      <text x="10" y="18" fill="#67e8f9" font-size="10.5" font-weight="600" class="mono">01. SAR Backscatter Water/Ice Thresholding (σ° dB)</text>
+
+      <rect y="36" width="340" height="28" rx="5" fill="#0a192f" stroke="#1e293b"/>
+      <text x="10" y="54" fill="#6ee7b7" font-size="10.5" font-weight="600" class="mono">02. Deep Learning Shoreline Segmentation (U-Net)</text>
+
+      <rect y="72" width="340" height="28" rx="5" fill="#0a192f" stroke="#1e293b"/>
+      <text x="10" y="90" fill="#fcd34d" font-size="10.5" font-weight="600" class="mono">03. Moraine Dam Breach &amp; Downstream Flood Routing</text>
+    </g>
+
+    <!-- Animated Glacial Lake Expansion Contour Radar -->
+    <g transform="translate(375, 86)">
+      <rect width="172" height="128" rx="8" fill="#030b17" stroke="#0e7490" stroke-width="1"/>
+      <text x="12" y="18" fill="#7dd3fc" font-size="9.5" font-weight="700" class="mono">TEMPORAL LAKE EXPANSION</text>
+      <!-- 2016 Baseline Contour -->
+      <path d="M 48,68 Q 70,45 105,52 T 138,75 Q 125,102 82,98 T 48,68 Z"
+            fill="none" stroke="#64748b" stroke-width="1.2" stroke-dasharray="3 3"/>
+      <!-- 2026 Predicted Expansion Contour (Pulsing) -->
+      <path d="M 34,66 Q 65,34 115,44 T 152,78 Q 135,112 75,106 T 34,66 Z"
+            fill="url(#lakeExpand)" stroke="#38bdf8" stroke-width="1.8" transform="translate(-395,-110)" class="lake-pulse"/>
+      <!-- Animated Glacial Lake Core -->
+      <ellipse cx="92" cy="72" rx="44" ry="22" fill="#0284c7" fill-opacity="0.45" stroke="#22d3ee" stroke-width="1.5">
+        <animate attributeName="rx" values="36;48;36" dur="4s" repeatCount="indefinite"/>
+        <animate attributeName="ry" values="18;25;18" dur="4s" repeatCount="indefinite"/>
+      </ellipse>
+      <text x="12" y="118" fill="#38bdf8" font-size="9" class="mono">--- 2016 Base  ─── 2026 AI Pred</text>
+    </g>
+  </g>
+
+  <!-- ==================== RIGHT PANEL: NH-7 RUDRAPRAYAG AHP & GRAVITY MODEL ==================== -->
+  <g transform="translate(612, 58)">
+    <rect width="564" height="232" rx="12" fill="#061121" stroke="#f59e0b" stroke-width="1.3"/>
+    <rect x="16" y="14" width="320" height="22" rx="4" fill="#451a03"/>
+    <text x="26" y="29" fill="#fbbf24" font-size="10" font-weight="700" class="mono">ESRI INDIA UC 2026 // RUDRAPRAYAG, UTTARAKHAND</text>
+
+    <text x="16" y="58" fill="#ffffff" font-size="17" font-weight="800" class="sans">
+      Community Isolation Risk along NH-7 Corridor
+    </text>
+    <text x="16" y="78" fill="#94a3b8" font-size="11.5" class="sans">
+      Evaluated <tspan fill="#fbbf24" font-weight="700">3,419 Himalayan settlements</tspan> via Copernicus GLO-30 DEM, AHP &amp; Gravity Model
+    </text>
+
+    <!-- Animated AHP Criteria Weight Bars -->
+    <g transform="translate(16, 96)">
+      <text x="0" y="14" fill="#e2e8f0" font-size="10.5" class="mono">Slope &amp; Terrain Instability (GLO-30)</text>
+      <rect x="245" y="3" width="210" height="12" rx="3" fill="#0f172a"/>
+      <rect x="245" y="3" width="178" height="12" rx="3" fill="url(#barAmber)">
+        <animate attributeName="width" values="40;178;178" dur="3s" repeatCount="indefinite"/>
+      </rect>
+      <text x="465" y="14" fill="#fbbf24" font-size="10.5" font-weight="700" class="mono">34.2%</text>
+
+      <text x="0" y="40" fill="#e2e8f0" font-size="10.5" class="mono">NH-7 Corridor Network Impedance</text>
+      <rect x="245" y="29" width="210" height="12" rx="3" fill="#0f172a"/>
+      <rect x="245" y="29" width="148" height="12" rx="3" fill="url(#barCyan)">
+        <animate attributeName="width" values="30;148;148" dur="3s" repeatCount="indefinite"/>
+      </rect>
+      <text x="465" y="40" fill="#38bdf8" font-size="10.5" font-weight="700" class="mono">28.5%</text>
+
+      <text x="0" y="66" fill="#e2e8f0" font-size="10.5" class="mono">Hydro-Geomorphic &amp; Drainage Proximity</text>
+      <rect x="245" y="55" width="210" height="12" rx="3" fill="#0f172a"/>
+      <rect x="245" y="55" width="118" height="12" rx="3" fill="url(#barCyan)">
+        <animate attributeName="width" values="25;118;118" dur="3s" repeatCount="indefinite"/>
+      </rect>
+      <text x="465" y="66" fill="#34d399" font-size="10.5" font-weight="700" class="mono">21.8%</text>
+    </g>
+
+    <!-- Bottom Findings Summary Pill -->
+    <rect x="16" y="176" width="532" height="40" rx="8" fill="#0b192c" stroke="#334155" stroke-width="1"/>
+    <circle cx="34" cy="196" r="5" fill="#ef4444" class="iso-pulse"/>
+    <text x="48" y="193" fill="#f8fafc" font-size="11" font-weight="700" class="sans">
+      Key Finding: High-Isolation Chokepoints Quantified Across 3,419 Rural Settlements
+    </text>
+    <text x="48" y="209" fill="#94a3b8" font-size="10" class="mono">
+      Indexed on Zenodo (10.5281/zenodo.23670659) &amp; XERJ Public Corpus Hub (@sutharprin098)
+    </text>
+  </g>
+</svg>

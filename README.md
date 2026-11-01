@@ -1,16 +1,22 @@
 <div align="center">
 
-# Hi there, I'm Prince Suthar 👋
-### **Spatial Data Scientist • Earth Observation Researcher • GeoAI & Systems Engineer**
-*Department of Geography, University of Delhi (Dr. Bhim Rao Ambedkar College)*
+<!-- ==================== BESPOKE ANIMATED ORBITAL GEOAI COMMAND BANNER ==================== -->
+<a href="https://www.princesite.in/">
+  <img src="assets/hero_orbital_command.svg" alt="Prince (@sutharprin098) — Orbital GeoAI & Earth Observation Command Center" width="100%" />
+</a>
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-princesite.in-0284C7?style=for-the-badge&logo=googlechrome&logoColor=white)](https://www.princesite.in/)
-[![AutoGIS Official QGIS Plugin](https://img.shields.io/badge/QGIS_Plugin_Repo-AutoGIS-589632?style=for-the-badge&logo=qgis&logoColor=white)](https://plugins.qgis.org/plugins/AutoGIS/)
-[![AutoGIS Website](https://img.shields.io/badge/AutoGIS_Studio-autogis.princesite.in-0D9488?style=for-the-badge&logo=earth&logoColor=white)](https://autogis.princesite.in/)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Prince_Suthar-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/prince-suthar-79552428a/)
+<br />
+
+<!-- ==================== LIVE VERIFIED CREDENTIAL & ECOSYSTEM BADGES ==================== -->
+[![Portfolio](https://img.shields.io/badge/PORTFOLIO-princesite.in-0284C7?style=for-the-badge&logo=googlechrome&logoColor=white)](https://www.princesite.in/)
+[![Official QGIS Plugin #6782](https://img.shields.io/badge/QGIS_OFFICIAL_REPO-AutoGIS_%236782-10B981?style=for-the-badge&logo=qgis&logoColor=white)](https://plugins.qgis.org/plugins/AutoGIS/)
+[![AutoGIS Portal](https://img.shields.io/badge/AUTOGIS_STUDIO-autogis.princesite.in-0D9488?style=for-the-badge&logo=earth&logoColor=white)](https://autogis.princesite.in/)
+[![opengeos/GeoLibre Contributor](https://img.shields.io/badge/OPENGEOS%2FGEOLIBRE-CORE_%2B_PR_%233300-38BDF8?style=for-the-badge&logo=github&logoColor=white)](https://github.com/opengeos/GeoLibre/pull/3300)
+[![CamAI Vision](https://img.shields.io/badge/CAMAI_VISION-camai.princesite.in-8B5CF6?style=for-the-badge&logo=nvidia&logoColor=white)](https://camai.princesite.in/)
 [![ORCID](https://img.shields.io/badge/ORCID-0009--0008--5483--2837-A6CE39?style=for-the-badge&logo=orcid&logoColor=white)](https://orcid.org/0009-0008-5483-2837)
-[![Zenodo DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.23670659-1D4ED8?style=for-the-badge&logo=zenodo&logoColor=white)](https://doi.org/10.5281/zenodo.23670659)
-[![Email](https://img.shields.io/badge/Email-sutharprince098%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:sutharprince098@gmail.com)
+[![Zenodo DOI](https://img.shields.io/badge/ZENODO_DOI-10.5281%2Fzenodo.23670659-F59E0B?style=for-the-badge&logo=zenodo&logoColor=white)](https://doi.org/10.5281/zenodo.23670659)
+[![LinkedIn](https://img.shields.io/badge/LINKEDIN-PRINCE-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/prince-suthar-79552428a/)
+[![Email](https://img.shields.io/badge/EMAIL-official.princesuthar%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:official.princesuthar@gmail.com)
 
 <br />
 
@@ -20,70 +26,119 @@
 
 ---
 
-## 🛰️ About Me
+## 🛰️ Mission Brief & Executive Profile
 
-I design and build **autonomous geospatial AI systems**, **satellite Earth observation pipelines (SAR & Optical)**, and **high-performance spatial analysis software**. My work bridges quantitative geography, multi-criteria decision analysis (AHP), and modern GeoAI architectures.
+I architect **autonomous geospatial AI agents**, **multi-sensor Earth Observation (SAR + Optical) hazard pipelines**, and **cloud-native spatial computing engines**. My work unifies quantitative physical geography, Multi-Criteria Decision Analysis (AHP), and live Model Context Protocol (MCP) bridges inside desktop and web GIS environments.
 
-- 🏛️ **Academic Affiliation:** Department of Geography, University of Delhi (*Dr. Bhim Rao Ambedkar College*)
-- 🧩 **Creator of [AutoGIS Studio](https://plugins.qgis.org/plugins/AutoGIS/):** Official QGIS Plugin (`v1.1.1`) featuring an Autonomous Geospatial AI Agent, Live Loopback MCP Server, Google Earth Engine integration, Offline Local AI (Ollama), and 39 spatial analysis tools
-- 🛰️ **Research & Publications:** Selected for **Esri India User Conference 2026** — Published on Zenodo ([DOI: 10.5281/zenodo.23670659](https://doi.org/10.5281/zenodo.23670659)) & indexed on [XERJ Corpus Hub](https://hub.xerj.org/contributors/sutharprin098)
-- 🏔️ **Current Research:** Glacial Lake Outburst Flood (GLOF) hazard modeling, multi-sensor remote sensing, and autonomous spatial decision support systems in the Western Himalayas
-- 🎥 **Founder:** [CamAI Real-Time Visual Intelligence](https://camai.princesite.in) — Edge-to-cloud computer vision & CCTV analytics workstation
-
----
-
-## 🚀 Flagship Open-Source & Research Systems
-
-| Project | Category | Highlights & Links |
-| :--- | :--- | :--- |
-| **[AutoGIS Studio](https://github.com/sutharprin098/AutoGIS)** | **QGIS Plugin & GeoAI Agent** | Official QGIS Plugin (`v1.1.1`, Qt5 & Qt6 compatible). 39 autonomous tools, Google Earth Engine integration, Live Loopback MCP Bridge (`127.0.0.1:8765`), 300 DPI publication layouts, 3D MapLibre web exports, and offline Ollama support.<br/>🔗 [Official QGIS Repo](https://plugins.qgis.org/plugins/AutoGIS/) • [Website](https://autogis.princesite.in/) • [Direct ZIP (`v1.1.1`)](https://github.com/sutharprin098/AutoGIS/releases/download/v1.1.1/AutoGIS.zip) |
-| **[GeoLibre](https://github.com/sutharprin098/GeoLibre)** | **Cloud-Native Desktop GIS** | Lightweight, cross-platform desktop GIS built with **Tauri v2, React, TypeScript, and MapLibre GL JS** for fast vector/raster visualization and cloud-native geospatial workflows. |
-| **[ShapeFixer](https://github.com/sutharprin098/ShapeFixer)** | **Spatial Data Engineering** | Modern browser-based GIS topology repair, validation, and attribute editing platform supporting Shapefiles, GeoJSON, GeoPackages, KML, and CSV spatial datasets. |
-| **[RustGIS](https://github.com/sutharprin098/RustGIS)** | **Systems GIS Engine** | High-performance, memory-safe open-source spatial data processing and GIS toolkit written in pure **Rust**. |
-| **[CamAI Workstation](https://github.com/sutharprin098/camai-releases)** | **Edge-to-Cloud Vision AI** | Enterprise AI CCTV workstation combining ONNX/TensorRT inference pipelines, homography speed estimation, and real-time multi-camera analytics.<br/>🔗 [camai.princesite.in](https://camai.princesite.in) |
-| **[Map3D City Engine](https://github.com/sutharprin098/map3d)** | **3D Web Cartography** | Procedural 3D urban digital twin renderer built with React Three Fiber (R3F), synthesizing OSM building footprints and road networks. |
+- 🏛️ **Academic Research Track:** **BA (Hons.) Geography with Research (4-Year Honours Track)** — *Department of Geography, University of Delhi (Dr. Bhim Rao Ambedkar College)* • **First Class Standing**
+- 🧩 **Creator of [AutoGIS Studio (`v1.1.1`)](https://plugins.qgis.org/plugins/AutoGIS/):** Published on the **Official QGIS Plugin Repository (Plugin ID: `6782`)** — 39 autonomous spatial tools, Google Earth Engine integration, Live Loopback MCP Server (`127.0.0.1:8765`), Offline Local AI (Ollama), 300 DPI dual-panel publication layouts, and 3D MapLibre webmaps
+- 🌍 **Core Open-Source Contributor ([`opengeos/GeoLibre`](https://github.com/opengeos/GeoLibre)):** Authored the **India National GIS Open Dataset Ecosystem** (`14` modules, `~1,400` LOC) and **[PR #3300](https://github.com/opengeos/GeoLibre/pull/3300)** adding `17` live desktop MCP control, WhiteboxTools, Model Builder, and viewport snapshot tools
+- 🏔️ **Himalayan Cryosphere & Hazard Research:** Leading ongoing Honours Thesis on **AI-Based Glacial Lake Outburst Flood (GLOF) Risk Forecasting in Himachal Pradesh** using **Sentinel-1 C-Band SAR (VV/VH)**, **Sentinel-2 NDWI/MNDWI**, and Deep Learning shoreline segmentation; selected for **Esri India User Conference 2026** ([Zenodo DOI: `10.5281/zenodo.23670659`](https://doi.org/10.5281/zenodo.23670659))
+- ⚡ **Industry & Systems Leadership:** **Founder & Chief Systems Architect** at **[CamAI](https://camai.princesite.in)** (TensorRT FP16 / ByteTrack edge vision platform) & **GIS Analyst** at **Carbon X Services Pvt. Ltd.** (Industrial Decarbonisation & Underground Carbon Capture and Storage `CCUS` spatial modeling)
 
 ---
 
-## 🖥️ Featured Showcase: AutoGIS Studio Live in QGIS
+## 🧠 Autonomous Spatial AI & Live MCP Pipeline
 
 <div align="center">
   <a href="https://github.com/sutharprin098/AutoGIS">
-    <img src="https://raw.githubusercontent.com/sutharprin098/AutoGIS/main/docs/autogis_screenshot.png" alt="AutoGIS Studio v1.1.1 Live in QGIS Desktop" width="96%" />
+    <img src="assets/autogis_mcp_pipeline.svg" alt="AutoGIS Studio & GeoLibre Live MCP Architecture Pipeline" width="100%" />
   </a>
-  <p><em><strong>AutoGIS Studio (v1.1.1)</strong> running inside QGIS Desktop — integrating Google Earth Engine satellite composites, OpenStreetMap vectors, real-time raster analytics, and 300 DPI publication cartography.</em></p>
 </div>
 
 ---
 
-## 🛠️ Technical Stack & Geospatial Arsenal
+## 🏔️ Himalayan Earth Observation & Scientific Telemetry
+
+<div align="center">
+  <a href="https://doi.org/10.5281/zenodo.23670659">
+    <img src="assets/himalayan_research_hud.svg" alt="Himalayan GLOF SAR-Optical & NH-7 Rudraprayag Research Telemetry" width="100%" />
+  </a>
+</div>
+
+---
+
+## 🚀 Flagship Open-Source Systems, Research & Production Platforms
+
+| System / Repository | Domain | Architecture & Live Credentials |
+| :--- | :--- | :--- |
+| **[AutoGIS Studio (`v1.1.1`)](https://github.com/sutharprin098/AutoGIS)** | **Official QGIS Plugin (`#6782`) & GeoAI Agent** | **39 autonomous PyQGIS tools**, Google Earth Engine (`ee-sutharprince098`) server-side polygon clipping, Planetary Computer STAC (`Float32` calculus), OpenStreetMap 24h smart cache, Live Loopback MCP Server (`127.0.0.1:8765`), Offline Ollama Local AI, 300 DPI dual-panel cartography, and 3D MapLibre GL exporter.<br/>🔗 **[Official QGIS Repo (`#6782`)](https://plugins.qgis.org/plugins/AutoGIS/)** • **[Portal](https://autogis.princesite.in/)** • **[Direct Release ZIP](https://github.com/sutharprin098/AutoGIS/releases/latest)** |
+| **[opengeos/GeoLibre](https://github.com/opengeos/GeoLibre/pull/3300)** | **Cloud-Native Desktop GIS (Tauri v2 + Rust)** | Core contributor to [`opengeos/GeoLibre`](https://github.com/opengeos/GeoLibre). Built the **India GIS Open Dataset Ecosystem** (ISRO Bhuvan, Survey of India, CWC, PMGSY) and **[PR #3300](https://github.com/opengeos/GeoLibre/pull/3300)** (`17` live desktop MCP bridge tools with `134/134` passing unit tests).<br/>🔗 **[Upstream PR #3300](https://github.com/opengeos/GeoLibre/pull/3300)** • **[Fork Repository](https://github.com/sutharprin098/GeoLibre)** |
+| **[NH-7 Himalayan Isolation Study](https://doi.org/10.5281/zenodo.23670659)** | **Published Research • Esri India UC 2026** | *Community Isolation Risk along the NH-7 Himalayan Transport Corridor (Rudraprayag, Uttarakhand)*. Evaluated **3,419 rural settlements** using Copernicus GLO-30 DEM, Analytic Hierarchy Process (AHP), and spatial gravity modeling.<br/>🔗 **[Zenodo DOI: `10.5281/zenodo.23670659`](https://doi.org/10.5281/zenodo.23670659)** • **[XERJ Corpus Hub](https://hub.xerj.org/contributors/sutharprin098)** |
+| **[CamAI Workstation](https://github.com/sutharprin098/camai-releases)** | **Edge-to-Cloud Computer Vision AI** | Enterprise real-time CCTV intelligence platform powered by **NVIDIA TensorRT FP16**, **ONNX Runtime**, **ByteTrack Re-ID**, homography vehicle speed estimation, FastAPI async telemetry, and Electron/TypeScript.<br/>🔗 **[camai.princesite.in](https://camai.princesite.in)** |
+| **[ShapeFixer](https://github.com/sutharprin098/ShapeFixer)** | **Browser-Native Spatial Topology Engine** | Zero-backend GIS topology repair, polygon self-intersection fixing, and attribute schema editor supporting Shapefiles, GeoJSON, GeoPackage, KML, and CSV datasets. |
+| **[RustGIS](https://github.com/sutharprin098/RustGIS)** | **Memory-Safe Systems GIS Core** | High-throughput spatial geometry indexing, raster calculus, and vector processing engine engineered in pure **Rust**. |
+| **[Map3D City Engine](https://github.com/sutharprin098/map3d)** | **Procedural 3D Urban Digital Twin** | Real-time 3D city renderer built with **React Three Fiber (R3F)** and WebGL, synthesizing OpenStreetMap building extrusions, road networks, and elevation meshes. |
+
+---
+
+## 🖥️ Live Workstation Showcase: AutoGIS Studio Inside QGIS Desktop
+
+<div align="center">
+  <a href="https://plugins.qgis.org/plugins/AutoGIS/">
+    <img src="https://raw.githubusercontent.com/sutharprin098/AutoGIS/main/docs/autogis_screenshot.png" alt="AutoGIS Studio Live in QGIS Desktop" width="98%" />
+  </a>
+  <p>
+    <sub>
+      <b>AutoGIS Studio (Official QGIS Plugin #6782)</b> executing a multi-step autonomous spatial plan inside QGIS Desktop — combining Google Earth Engine satellite composites, OpenStreetMap infrastructure vectors, automated cartographic Z-ordering, and 300 DPI publication layouts.
+    </sub>
+  </p>
+</div>
+
+---
+
+## 🛠️ Systems & Geospatial Arsenal Matrix
+
+<div align="center">
+  <img src="assets/systems_constellation.svg" alt="Prince Geospatial, EO, Edge AI & WebGIS Technical Matrix" width="100%" />
+</div>
+
+<br />
 
 <div align="center">
 
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![QGIS](https://img.shields.io/badge/PyQGIS_%26_QGIS-589632?style=for-the-badge&logo=qgis&logoColor=white)
+![Python](https://img.shields.io/badge/Python_3.12-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![QGIS & PyQGIS](https://img.shields.io/badge/PyQGIS_%26_QGIS_3%2F4-589632?style=for-the-badge&logo=qgis&logoColor=white)
 ![Google Earth Engine](https://img.shields.io/badge/Google_Earth_Engine-4285F4?style=for-the-badge&logo=googleearth&logoColor=white)
-![GDAL](https://img.shields.io/badge/GDAL_%2F_Rasterio_%2F_GeoPandas-0D9488?style=for-the-badge&logo=osgeo&logoColor=white)
+![GDAL & Rasterio](https://img.shields.io/badge/GDAL_%E2%80%A2_Rasterio_%E2%80%A2_GeoPandas-0D9488?style=for-the-badge&logo=osgeo&logoColor=white)
 ![Rust](https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
-![React](https://img.shields.io/badge/React_%26_Tauri-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-![MapLibre](https://img.shields.io/badge/MapLibre_GL_JS-285DAA?style=for-the-badge&logo=mapbox&logoColor=white)
-![Qt](https://img.shields.io/badge/PyQt5_%26_Qt6-41CD52?style=for-the-badge&logo=qt&logoColor=white)
-![ONNX](https://img.shields.io/badge/ONNX_%26_PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
+![Tauri & React](https://img.shields.io/badge/Tauri_v2_%26_React_19-20232A?style=for-the-badge&logo=tauri&logoColor=24C8DB)
+![MapLibre GL](https://img.shields.io/badge/MapLibre_GL_3D-285DAA?style=for-the-badge&logo=mapbox&logoColor=white)
+![PyTorch & TensorRT](https://img.shields.io/badge/PyTorch_%E2%80%A2_ONNX_%E2%80%A2_TensorRT-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI_%26_MCP-009688?style=for-the-badge&logo=fastapi&logoColor=white)
 
 </div>
 
-- **Satellite Remote Sensing & EO:** Sentinel-1 SAR, Sentinel-2 MSI, Landsat 8/9, Copernicus DEM, ALOS PALSAR, ESA WorldCover, ISRO Bhuvan, Cloud-Optimized GeoTIFFs (STAC)
-- **GeoAI & Agentic Architectures:** Model Context Protocol (MCP), Multi-LLM Tool Dispatch (Gemini, Claude, OpenAI, DeepSeek, Ollama), Automated Cartographic Pipelines
-- **Spatial Modeling & GIS:** Hydrological & GLOF Hazard Modeling, Multi-Criteria Decision Making (AHP), Zonal & Focal Raster Calculus, Network Routing & Isochrones
+---
+
+## 💼 Industry Consulting & Applied Spatial Engineering
+
+- 🏭 **Carbon X Services Pvt. Ltd. (*GIS Analyst — Industrial Decarbonisation & CCUS*):** Engineered multi-layer spatial suitability models mapping industrial $\text{CO}_2$ point-source emitters against deep saline aquifers, basaltic formations, and pipeline transport corridors for underground Carbon Capture, Utilisation, and Storage (CCUS).
+- ☀️ **Post-Mining Solar Reclamation & Utility Siting (*Independent Geospatial Consultant*):** Formulated custom **Composite Environmental Index (CEI)** and **Solar Potential Index (SPI)** rasters for degraded coal mine reclamation and utility-scale solar siting across Maharashtra (Pune) and central India.
+- 🏥 **Urban Healthcare Accessibility & Isochrone Network Modeling (*Ludhiana*):** Built high-resolution road-network impedance graphs and emergency travel-time isochrones to quantify urban-periurban healthcare service gaps.
 
 ---
 
-## 📬 Connect & Collaborate
+## 🐍 Autonomous Contribution Telemetry
 
-- 🌐 **Academic & Systems Portfolio:** [https://www.princesite.in/](https://www.princesite.in/)
-- 🗺️ **AutoGIS Studio Portal:** [https://autogis.princesite.in/](https://autogis.princesite.in/)
-- 🧩 **Official QGIS Plugin Page:** [https://plugins.qgis.org/plugins/AutoGIS/](https://plugins.qgis.org/plugins/AutoGIS/)
-- 💼 **LinkedIn:** [linkedin.com/in/prince-suthar-79552428a](https://www.linkedin.com/in/prince-suthar-79552428a/)
-- 🎓 **ORCID Profile:** [0009-0008-5483-2837](https://orcid.org/0009-0008-5483-2837)
-- 📧 **Email:** [sutharprince098@gmail.com](mailto:sutharprince098@gmail.com)
+<div align="center">
+  <img alt="Autonomous Satellite Swath & Open-Source Commit Telemetry" src="assets/contribution_telemetry.svg" width="100%" />
+</div>
+
+---
+
+## 📬 Direct Telemetry & Collaboration Channels
+
+<div align="center">
+
+| Channel | Endpoint / Link | Purpose |
+| :--- | :--- | :--- |
+| 🌐 **Academic & Systems Portfolio** | **[princesite.in](https://www.princesite.in/)** | Complete Research, Publications & Systems Showcase |
+| 🧩 **Official QGIS Plugin (`#6782`)** | **[plugins.qgis.org/plugins/AutoGIS](https://plugins.qgis.org/plugins/AutoGIS/)** | Install AutoGIS Studio directly in QGIS Plugin Manager |
+| 🗺️ **AutoGIS Studio Documentation** | **[autogis.princesite.in](https://autogis.princesite.in/)** | Architecture, 39 Tool Reference & Live MCP Guide |
+| 🎥 **CamAI Vision Platform** | **[camai.princesite.in](https://camai.princesite.in/)** | Edge-to-Cloud TensorRT CCTV Visual Intelligence |
+| 🎓 **ORCID & Zenodo Research** | **[0009-0008-5483-2837](https://orcid.org/0009-0008-5483-2837)** • **[DOI: 10.5281/zenodo.23670659](https://doi.org/10.5281/zenodo.23670659)** | Peer-Reviewed Datasets, Preprints & Citations |
+| 📧 **Primary Contact** | **[official.princesuthar@gmail.com](mailto:official.princesuthar@gmail.com)** • **[sutharprince098@gmail.com](mailto:sutharprince098@gmail.com)** | Erasmus / Research Collaborations & GeoAI Consulting |
+
+</div>

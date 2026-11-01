@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 280" width="100%" height="100%">
+  <defs>
+    <linearGradient id="matBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#020617"/>
+      <stop offset="50%" stop-color="#061224"/>
+      <stop offset="100%" stop-color="#02131a"/>
+    </linearGradient>
+    <linearGradient id="glowCyan" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#22d3ee"/>
+      <stop offset="100%" stop-color="#10b981"/>
+    </linearGradient>
+  </defs>
+
+  <style>
+    .mono { font-family: 'JetBrains Mono', 'Fira Code', 'Consolas', monospace; }
+    .sans { font-family: 'Inter', 'Segoe UI', -apple-system, sans-serif; }
+    .ring-rot { transform-origin: 600px 155px; animation: rot 28s linear infinite; }
+    @keyframes rot {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+  </style>
+
+  <rect width="1200" height="280" rx="16" fill="url(#matBg)" stroke="#155e75" stroke-width="1.4"/>
+
+  <!-- Header -->
+  <rect x="24" y="16" width="1152" height="30" rx="6" fill="#050e1d" stroke="#0e7490" stroke-width="0.9"/>
+  <text x="40" y="35" fill="#22d3ee" font-size="11" font-weight="700" class="mono" letter-spacing="1">
+    SYSTEMS &amp; GEOSPATIAL ARSENAL MATRIX // EARTH OBSERVATION • AGENT MCP • EDGE AI • WEBGIS
+  </text>
+  <text x="930" y="35" fill="#10b981" font-size="11" font-weight="700" class="mono">
+    4 DOMAIN PILLARS ACTIVE
+  </text>
+
+  <!-- 4 Quadrant Cards -->
+  <!-- Pillar 1: Satellite EO & Remote Sensing -->
+  <g transform="translate(24, 62)">
+    <rect width="276" height="198" rx="12" fill="#071326" stroke="#38bdf8" stroke-width="1.3"/>
+    <rect x="0" y="0" width="276" height="6" rx="3" fill="#38bdf8"/>
+    <text x="18" y="30" fill="#38bdf8" font-size="11" font-weight="700" class="mono">01 // EARTH OBSERVATION</text>
+    <text x="18" y="52" fill="#ffffff" font-size="15.5" font-weight="800" class="sans">SAR &amp; Optical Remote Sensing</text>
+    <text x="18" y="80" fill="#cbd5e1" font-size="11.5" class="mono">• Sentinel-1 C-Band SAR (VV/VH)</text>
+    <text x="18" y="102" fill="#cbd5e1" font-size="11.5" class="mono">• Sentinel-2 MSI &amp; Landsat 8/9</text>
+    <text x="18" y="124" fill="#cbd5e1" font-size="11.5" class="mono">• Google Earth Engine (Python)</text>
+    <text x="18" y="146" fill="#cbd5e1" font-size="11.5" class="mono">• Copernicus GLO-30 &amp; ALOS DEM</text>
+    <text x="18" y="168" fill="#cbd5e1" font-size="11.5" class="mono">• Planetary Computer STAC / COG</text>
+    <text x="18" y="188" fill="#38bdf8" font-size="10.5" font-weight="700" class="mono">• ISRO Bhuvan &amp; ESA WorldCover</text>
+  </g>
+
+  <!-- Pillar 2: Autonomous GeoAI & Desktop GIS -->
+  <g transform="translate(316, 62)">
+    <rect width="276" height="198" rx="12" fill="#071326" stroke="#10b981" stroke-width="1.3"/>
+    <rect x="0" y="0" width="276" height="6" rx="3" fill="#10b981"/>
+    <text x="18" y="30" fill="#34d399" font-size="11" font-weight="700" class="mono">02 // AUTONOMOUS GEOAI</text>
+    <text x="18" y="52" fill="#ffffff" font-size="15.5" font-weight="800" class="sans">Agentic GIS &amp; Spatial Calculus</text>
+    <text x="18" y="80" fill="#cbd5e1" font-size="11.5" class="mono">• PyQGIS (Qt5 / Qt6 Plugins)</text>
+    <text x="18" y="102" fill="#cbd5e1" font-size="11.5" class="mono">• Model Context Protocol (MCP)</text>
+    <text x="18" y="124" fill="#cbd5e1" font-size="11.5" class="mono">• GDAL / Rasterio / GeoPandas</text>
+    <text x="18" y="146" fill="#cbd5e1" font-size="11.5" class="mono">• WhiteboxTools Hydrological</text>
+    <text x="18" y="168" fill="#cbd5e1" font-size="11.5" class="mono">• Offline Ollama &amp; Multi-LLM</text>
+    <text x="18" y="188" fill="#34d399" font-size="10.5" font-weight="700" class="mono">• AHP Multi-Criteria &amp; Isochrones</text>
+  </g>
+
+  <!-- Pillar 3: High-Performance Vision & Systems -->
+  <g transform="translate(608, 62)">
+    <rect width="276" height="198" rx="12" fill="#071326" stroke="#a855f7" stroke-width="1.3"/>
+    <rect x="0" y="0" width="276" height="6" rx="3" fill="#a855f7"/>
+    <text x="18" y="30" fill="#d8b4fe" font-size="11" font-weight="700" class="mono">03 // EDGE AI &amp; SYSTEMS</text>
+    <text x="18" y="52" fill="#ffffff" font-size="15.5" font-weight="800" class="sans">Computer Vision &amp; Native Core</text>
+    <text x="18" y="80" fill="#cbd5e1" font-size="11.5" class="mono">• PyTorch / ONNX Runtime</text>
+    <text x="18" y="102" fill="#cbd5e1" font-size="11.5" class="mono">• NVIDIA TensorRT FP16 Engine</text>
+    <text x="18" y="124" fill="#cbd5e1" font-size="11.5" class="mono">• ByteTrack Multi-Target Re-ID</text>
+    <text x="18" y="146" fill="#cbd5e1" font-size="11.5" class="mono">• Homography Speed Calibration</text>
+    <text x="18" y="168" fill="#cbd5e1" font-size="11.5" class="mono">• Rust Memory-Safe GIS Core</text>
+    <text x="18" y="188" fill="#d8b4fe" font-size="10.5" font-weight="700" class="mono">• FastAPI Async Telemetry Bus</text>
+  </g>
+
+  <!-- Pillar 4: Cloud-Native 3D WebGIS & Desktop -->
+  <g transform="translate(900, 62)">
+    <rect width="276" height="198" rx="12" fill="#071326" stroke="#f59e0b" stroke-width="1.3"/>
+    <rect x="0" y="0" width="276" height="6" rx="3" fill="#f59e0b"/>
+    <text x="18" y="30" fill="#fcd34d" font-size="11" font-weight="700" class="mono">04 // 3D WEBGIS &amp; DESKTOP</text>
+    <text x="18" y="52" fill="#ffffff" font-size="15.5" font-weight="800" class="sans">Cloud-Native Spatial Stacks</text>
+    <text x="18" y="80" fill="#cbd5e1" font-size="11.5" class="mono">• Tauri v2 + Rust Desktop GIS</text>
+    <text x="18" y="102" fill="#cbd5e1" font-size="11.5" class="mono">• MapLibre GL JS 3D Terrain</text>
+    <text x="18" y="124" fill="#cbd5e1" font-size="11.5" class="mono">• React 19 / TypeScript / Vite</text>
+    <text x="18" y="146" fill="#cbd5e1" font-size="11.5" class="mono">• React Three Fiber (R3F) 3D</text>
+    <text x="18" y="168" fill="#cbd5e1" font-size="11.5" class="mono">• Deck.gl / PMTiles / GeoParquet</text>
+    <text x="18" y="188" fill="#fcd34d" font-size="10.5" font-weight="700" class="mono">• Automated CI/CD &amp; Security</text>
+  </g>
+</svg>

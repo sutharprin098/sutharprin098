@@ -1,0 +1,195 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" width="100%" height="100%">
+  <defs>
+    <linearGradient id="pipeBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#030712"/>
+      <stop offset="50%" stop-color="#071224"/>
+      <stop offset="100%" stop-color="#041820"/>
+    </linearGradient>
+
+    <linearGradient id="wireCyan" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#10b981"/>
+    </linearGradient>
+
+    <linearGradient id="wirePurple" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#a855f7"/>
+      <stop offset="100%" stop-color="#38bdf8"/>
+    </linearGradient>
+
+    <filter id="pktGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <pattern id="subGrid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M 32 0 L 0 0 0 32" fill="none" stroke="#1e293b" stroke-width="0.6" stroke-opacity="0.45"/>
+    </pattern>
+
+    <!-- Data Flow Paths -->
+    <path id="flow1" d="M 250,115 C 300,115 305,165 355,165"/>
+    <path id="flow2" d="M 250,225 C 300,225 305,175 355,175"/>
+    <path id="flow3" d="M 595,155 C 645,155 650,110 700,110"/>
+    <path id="flow4" d="M 595,170 C 645,170 650,170 700,170"/>
+    <path id="flow5" d="M 595,185 C 645,185 650,235 700,235"/>
+    <path id="flow6" d="M 920,110 C 955,110 960,138 995,138"/>
+    <path id="flow7" d="M 920,170 C 955,170 960,170 995,170"/>
+    <path id="flow8" d="M 920,235 C 955,235 960,210 995,210"/>
+  </defs>
+
+  <style>
+    .mono { font-family: 'JetBrains Mono', 'Fira Code', 'Consolas', monospace; }
+    .sans { font-family: 'Inter', 'Segoe UI', -apple-system, sans-serif; }
+    .stream-line { stroke-dasharray: 7 7; animation: streamDash 12s linear infinite; }
+    .hub-pulse { animation: borderPulse 3s infinite ease-in-out; }
+    @keyframes streamDash {
+      to { stroke-dashoffset: -224; }
+    }
+    @keyframes borderPulse {
+      0%, 100% { stroke-opacity: 0.55; }
+      50% { stroke-opacity: 1; }
+    }
+  </style>
+
+  <!-- Canvas -->
+  <rect width="1200" height="320" rx="16" fill="url(#pipeBg)" stroke="#155e75" stroke-width="1.4"/>
+  <rect width="1200" height="320" rx="16" fill="url(#subGrid)"/>
+
+  <!-- Header Banner -->
+  <rect x="24" y="16" width="1152" height="30" rx="6" fill="#050e1d" stroke="#0e7490" stroke-width="0.9"/>
+  <text x="40" y="35" fill="#22d3ee" font-size="11" font-weight="700" class="mono" letter-spacing="1">
+    AUTONOMOUS SPATIAL AI ARCHITECTURE // LIVE MCP LOOPBACK &amp; MULTI-SENSOR DISPATCH ENGINE
+  </text>
+  <text x="905" y="35" fill="#34d399" font-size="11" font-weight="700" class="mono">
+    LATENCY: 0.8ms LOOPBACK • 39 TOOLS
+  </text>
+
+  <!-- Connecting Data Stream Wires -->
+  <g fill="none" stroke-width="2">
+    <use href="#flow1" stroke="url(#wirePurple)" class="stream-line"/>
+    <use href="#flow2" stroke="url(#wireCyan)" class="stream-line"/>
+    <use href="#flow3" stroke="url(#wireCyan)" class="stream-line"/>
+    <use href="#flow4" stroke="url(#wireCyan)" class="stream-line"/>
+    <use href="#flow5" stroke="url(#wireCyan)" class="stream-line"/>
+    <use href="#flow6" stroke="#10b981" class="stream-line"/>
+    <use href="#flow7" stroke="#38bdf8" class="stream-line"/>
+    <use href="#flow8" stroke="#f59e0b" class="stream-line"/>
+  </g>
+
+  <!-- Animated High-Speed Data Packets -->
+  <circle r="4.5" fill="#c084fc" filter="url(#pktGlow)">
+    <animateMotion dur="2.6s" repeatCount="indefinite"><mpath href="#flow1"/></animateMotion>
+  </circle>
+  <circle r="4.5" fill="#38bdf8" filter="url(#pktGlow)">
+    <animateMotion dur="2.9s" begin="0.6s" repeatCount="indefinite"><mpath href="#flow2"/></animateMotion>
+  </circle>
+  <circle r="4" fill="#22d3ee" filter="url(#pktGlow)">
+    <animateMotion dur="2.2s" repeatCount="indefinite"><mpath href="#flow3"/></animateMotion>
+  </circle>
+  <circle r="4" fill="#10b981" filter="url(#pktGlow)">
+    <animateMotion dur="2.0s" begin="0.4s" repeatCount="indefinite"><mpath href="#flow4"/></animateMotion>
+  </circle>
+  <circle r="4" fill="#f59e0b" filter="url(#pktGlow)">
+    <animateMotion dur="2.4s" begin="0.8s" repeatCount="indefinite"><mpath href="#flow5"/></animateMotion>
+  </circle>
+  <circle r="4" fill="#34d399" filter="url(#pktGlow)">
+    <animateMotion dur="1.9s" repeatCount="indefinite"><mpath href="#flow6"/></animateMotion>
+  </circle>
+  <circle r="4" fill="#38bdf8" filter="url(#pktGlow)">
+    <animateMotion dur="2.1s" begin="0.5s" repeatCount="indefinite"><mpath href="#flow7"/></animateMotion>
+  </circle>
+  <circle r="4" fill="#fbbf24" filter="url(#pktGlow)">
+    <animateMotion dur="2.3s" begin="0.9s" repeatCount="indefinite"><mpath href="#flow8"/></animateMotion>
+  </circle>
+
+  <!-- ==================== STAGE 1: LLM & LOCAL AI BRAINS ==================== -->
+  <!-- Box 1A: Cloud Frontier LLMs -->
+  <g transform="translate(28, 72)">
+    <rect width="222" height="86" rx="10" fill="#091326" stroke="#a855f7" stroke-width="1.4"/>
+    <text x="16" y="24" fill="#d8b4fe" font-size="10" font-weight="700" class="mono">STAGE 01A // FRONTIER LLMs</text>
+    <text x="16" y="47" fill="#ffffff" font-size="15" font-weight="800" class="sans">Claude • Gemini • GPT-4o</text>
+    <text x="16" y="66" fill="#94a3b8" font-size="10.5" class="mono">Natural Language Spatial Plan</text>
+    <text x="16" y="80" fill="#c084fc" font-size="9.5" class="mono">Auto-Continue Guard [8/8 Steps]</text>
+  </g>
+
+  <!-- Box 1B: Offline Local AI (Ollama) -->
+  <g transform="translate(28, 182)">
+    <rect width="222" height="86" rx="10" fill="#091326" stroke="#38bdf8" stroke-width="1.4"/>
+    <text x="16" y="24" fill="#7dd3fc" font-size="10" font-weight="700" class="mono">STAGE 01B // AIR-GAPPED AI</text>
+    <text x="16" y="47" fill="#ffffff" font-size="15" font-weight="800" class="sans">Offline Ollama + Desktop MCP</text>
+    <text x="16" y="66" fill="#94a3b8" font-size="10.5" class="mono">Qwen-2.5-Coder • Llama-3.3</text>
+    <text x="16" y="80" fill="#38bdf8" font-size="9.5" class="mono">Zero-Cloud Privacy Execution</text>
+  </g>
+
+  <!-- ==================== STAGE 2: AUTOGIS & GEOLIBRE MCP CORE ==================== -->
+  <g transform="translate(355, 86)">
+    <rect width="240" height="168" rx="14" fill="#051929" stroke="#22d3ee" stroke-width="2" class="hub-pulse"/>
+    <rect x="12" y="12" width="216" height="24" rx="5" fill="#083344"/>
+    <circle cx="26" cy="24" r="4" fill="#10b981">
+      <animate attributeName="opacity" values="1;0.2;1" dur="1.4s" repeatCount="indefinite"/>
+    </circle>
+    <text x="38" y="28" fill="#67e8f9" font-size="10" font-weight="700" class="mono">MCP LOOPBACK: 127.0.0.1:8765</text>
+
+    <text x="20" y="62" fill="#ffffff" font-size="19" font-weight="900" class="sans">AutoGIS Studio v1.1</text>
+    <text x="20" y="82" fill="#34d399" font-size="12" font-weight="700" class="mono">+ opengeos/GeoLibre #3300</text>
+
+    <line x1="20" y1="94" x2="220" y2="94" stroke="#164e63" stroke-width="1"/>
+
+    <text x="20" y="113" fill="#e2e8f0" font-size="11" class="mono">• 39 Autonomous PyQGIS Tools</text>
+    <text x="20" y="131" fill="#e2e8f0" font-size="11" class="mono">• 17 GeoLibre Live MCP Tools</text>
+    <text x="20" y="149" fill="#38bdf8" font-size="10.5" font-weight="700" class="mono">• Thread-Safe Main-Loop Dispatch</text>
+  </g>
+
+  <!-- ==================== STAGE 3: MULTI-SENSOR & GEOPROCESSING ENGINES ==================== -->
+  <!-- Box 3A: Google Earth Engine & STAC -->
+  <g transform="translate(700, 74)">
+    <rect width="220" height="68" rx="9" fill="#07162c" stroke="#10b981" stroke-width="1.3"/>
+    <text x="14" y="21" fill="#6ee7b7" font-size="9.5" font-weight="700" class="mono">EARTH OBSERVATION ENGINE</text>
+    <text x="14" y="42" fill="#ffffff" font-size="14" font-weight="800" class="sans">GEE + Planetary STAC</text>
+    <text x="14" y="58" fill="#94a3b8" font-size="10" class="mono">S1 SAR • S2 NDWI • Float32 Clip</text>
+  </g>
+
+  <!-- Box 3B: GDAL / Whitebox / Vector ETL -->
+  <g transform="translate(700, 148)">
+    <rect width="220" height="58" rx="9" fill="#07162c" stroke="#38bdf8" stroke-width="1.3"/>
+    <text x="14" y="20" fill="#7dd3fc" font-size="9.5" font-weight="700" class="mono">SPATIAL CALCULUS &amp; OSM</text>
+    <text x="14" y="39" fill="#ffffff" font-size="14" font-weight="800" class="sans">GDAL • Whitebox • Overpass</text>
+    <text x="14" y="52" fill="#94a3b8" font-size="9.5" class="mono">Zonal Stats • 24h Cache • AHP</text>
+  </g>
+
+  <!-- Box 3C: India National GIS Corpus -->
+  <g transform="translate(700, 214)">
+    <rect width="220" height="58" rx="9" fill="#07162c" stroke="#f59e0b" stroke-width="1.3"/>
+    <text x="14" y="20" fill="#fcd34d" font-size="9.5" font-weight="700" class="mono">NATIONAL GEODATA CORPUS</text>
+    <text x="14" y="39" fill="#ffffff" font-size="14" font-weight="800" class="sans">ISRO Bhuvan • ESA 10m</text>
+    <text x="14" y="52" fill="#94a3b8" font-size="9.5" class="mono">SOI Boundaries • USGS Feed</text>
+  </g>
+
+  <!-- ==================== STAGE 4: SCIENTIFIC & INTERACTIVE OUTPUTS ==================== -->
+  <g transform="translate(995, 76)">
+    <rect width="178" height="196" rx="12" fill="#061524" stroke="#10b981" stroke-width="1.6"/>
+    <text x="16" y="26" fill="#34d399" font-size="10" font-weight="700" class="mono">STAGE 04 // OUTPUTS</text>
+
+    <!-- Output 1 -->
+    <rect x="14" y="38" width="150" height="44" rx="6" fill="#0b2239" stroke="#22d3ee" stroke-width="0.9"/>
+    <text x="24" y="56" fill="#ffffff" font-size="12" font-weight="700" class="sans">300 DPI Dual-Panel</text>
+    <text x="24" y="72" fill="#67e8f9" font-size="9.5" class="mono">Cartographic Layout</text>
+
+    <!-- Output 2 -->
+    <rect x="14" y="90" width="150" height="44" rx="6" fill="#0b2239" stroke="#38bdf8" stroke-width="0.9"/>
+    <text x="24" y="108" fill="#ffffff" font-size="12" font-weight="700" class="sans">3D MapLibre GL Web</text>
+    <text x="24" y="124" fill="#7dd3fc" font-size="9.5" class="mono">Interactive Pitch/Terrain</text>
+
+    <!-- Output 3 -->
+    <rect x="14" y="142" width="150" height="42" rx="6" fill="#0b2239" stroke="#f59e0b" stroke-width="0.9"/>
+    <text x="24" y="160" fill="#ffffff" font-size="12" font-weight="700" class="sans">Auto Z-Order &amp; Style</text>
+    <text x="24" y="175" fill="#fcd34d" font-size="9.5" class="mono">Hollow Boundary + Legend</text>
+  </g>
+
+  <!-- Bottom Telemetry Footer -->
+  <text x="36" y="302" fill="#64748b" font-size="10.5" class="mono">
+    VERIFIED SECURITY: Bandit AST Scan (0 Issues / 8,386 LOC) • Automated Pytest Suite • Qt5 &amp; Qt6 Compatible
+  </text>
+</svg>
