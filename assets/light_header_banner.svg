@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient (Clean Light Theme) -->
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="60%" stop-color="#F8FAFC"/>
+      <stop offset="100%" stop-color="#F1F5F9"/>
+    </linearGradient>
+
+    <!-- Accent Gradients -->
+    <linearGradient id="blueGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0284C7"/>
+      <stop offset="100%" stop-color="#0EA5E9"/>
+    </linearGradient>
+
+    <linearGradient id="emeraldGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#059669"/>
+      <stop offset="100%" stop-color="#10B981"/>
+    </linearGradient>
+
+    <filter id="softShadow" x="-5%" y="-5%" width="110%" height="115%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#0F172A" flood-opacity="0.06"/>
+    </filter>
+  </defs>
+
+  <!-- Container Box with clean slate border -->
+  <rect width="1200" height="320" rx="16" fill="url(#bgGradient)" stroke="#E2E8F0" stroke-width="1.5"/>
+
+  <!-- Topographic Contour Lines (Subtle Light Gray) -->
+  <g opacity="0.45" stroke="#CBD5E1" stroke-width="1.2" fill="none">
+    <path d="M -50 80 Q 200 20 450 110 T 950 60 T 1250 140" />
+    <path d="M -50 130 Q 180 70 420 160 T 920 110 T 1250 190" />
+    <path d="M -50 180 Q 160 120 390 210 T 890 160 T 1250 240" />
+    <path d="M -50 230 Q 140 170 360 260 T 860 210 T 1250 290" />
+    <path d="M -50 280 Q 120 220 330 310 T 830 260 T 1250 340" />
+  </g>
+
+  <!-- Coordinate Grid Markings -->
+  <g opacity="0.2" stroke="#94A3B8" stroke-dasharray="3,3" stroke-width="1">
+    <line x1="80" y1="0" x2="80" y2="320" />
+    <line x1="420" y1="0" x2="420" y2="320" />
+    <line x1="780" y1="0" x2="780" y2="320" />
+    <line x1="1080" y1="0" x2="1080" y2="320" />
+  </g>
+
+  <text x="80" y="32" font-family="monospace" font-size="11" fill="#94A3B8" letter-spacing="1">HIMALAYAN CRYOSPHERE &amp; EARTH OBSERVATION LAB</text>
+  <text x="1120" y="32" font-family="monospace" font-size="11" fill="#94A3B8" text-anchor="end">AUTONOMOUS GEOSPATIAL AI</text>
+
+  <!-- Left Content Area -->
+  <g transform="translate(80, 68)">
+    <!-- Status Badge -->
+    <rect width="310" height="28" rx="14" fill="#ECFDF5" stroke="#A7F3D0" stroke-width="1"/>
+    <circle cx="16" cy="14" r="4.5" fill="#10B981"/>
+    <text x="28" y="18" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" fill="#047857" letter-spacing="0.3">
+      OFFICIAL QGIS PLUGIN CREATOR • #6782
+    </text>
+
+    <!-- Main Title -->
+    <text x="0" y="70" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="44" font-weight="800" fill="#0F172A" letter-spacing="-0.8">
+      Prince Suthar
+    </text>
+
+    <!-- Subtitle -->
+    <text x="0" y="104" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="18" font-weight="600" fill="#0369A1">
+      Geospatial AI &amp; Earth Observation Systems Engineer
+    </text>
+
+    <text x="0" y="130" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="400" fill="#64748B">
+      University of Delhi • Cryosphere Remote Sensing • PyQGIS &amp; WebGIS Developer
+    </text>
+
+    <!-- Clean Light Mode Tags Row -->
+    <g transform="translate(0, 155)">
+      <!-- Tag 1 -->
+      <rect width="130" height="28" rx="6" fill="#F0F9FF" stroke="#BAE6FD" stroke-width="1"/>
+      <text x="65" y="18" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600" fill="#0284C7" text-anchor="middle">PyQGIS &amp; GDAL</text>
+
+      <!-- Tag 2 -->
+      <rect x="140" width="160" height="28" rx="6" fill="#F0FDF4" stroke="#BBF7D0" stroke-width="1"/>
+      <text x="220" y="18" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600" fill="#16A34A" text-anchor="middle">Google Earth Engine</text>
+
+      <!-- Tag 3 -->
+      <rect x="310" width="150" height="28" rx="6" fill="#FAF5FF" stroke="#E9D5FF" stroke-width="1"/>
+      <text x="385" y="18" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600" fill="#7C3AED" text-anchor="middle">Sentinel-1/2 SAR</text>
+
+      <!-- Tag 4 -->
+      <rect x="470" width="120" height="28" rx="6" fill="#FFF7ED" stroke="#FED7AA" stroke-width="1"/>
+      <text x="530" y="18" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600" fill="#EA580C" text-anchor="middle">Rust &amp; 3D GIS</text>
+    </g>
+  </g>
+
+  <!-- Right Visual Area: Technical Geospatial Globe / Compass Graphic -->
+  <g transform="translate(970, 165)">
+    <!-- Radar Rings -->
+    <circle r="100" fill="none" stroke="#E2E8F0" stroke-width="1.2" stroke-dasharray="4,4"/>
+    <circle r="75" fill="none" stroke="#CBD5E1" stroke-width="1.2"/>
+    <circle r="50" fill="#F0F9FF" stroke="#93C5FD" stroke-width="1.5"/>
+
+    <!-- Crosshairs -->
+    <line x1="-110" y1="0" x2="110" y2="0" stroke="#94A3B8" stroke-width="1" stroke-opacity="0.3"/>
+    <line x1="0" y1="-110" x2="0" y2="110" stroke="#94A3B8" stroke-width="1" stroke-opacity="0.3"/>
+
+    <!-- Satellite Orbit Path -->
+    <ellipse rx="95" ry="34" fill="none" stroke="#0284C7" stroke-width="1.8" stroke-dasharray="6,4" transform="rotate(-30)"/>
+    
+    <!-- Satellite Icon -->
+    <g transform="rotate(-30) translate(95, 0)">
+      <circle r="6" fill="#0284C7" stroke="#FFFFFF" stroke-width="2" filter="url(#softShadow)"/>
+      <rect x="-10" y="-2" width="6" height="4" rx="1" fill="#38BDF8"/>
+      <rect x="4" y="-2" width="6" height="4" rx="1" fill="#38BDF8"/>
+    </g>
+
+    <!-- Center Coordinate Pin -->
+    <circle r="5" fill="#10B981" stroke="#FFFFFF" stroke-width="2"/>
+
+    <!-- Floating Badge Below -->
+    <g transform="translate(-85, 82)">
+      <rect width="170" height="26" rx="13" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" filter="url(#softShadow)"/>
+      <text x="85" y="17" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600" fill="#334155" text-anchor="middle">
+        40+ Autonomous Tools
+      </text>
+    </g>
+  </g>
+</svg>
